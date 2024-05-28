@@ -1,0 +1,25 @@
+header{
+    color:white;
+    font-size: 30px;
+    background-color: #3b5998;
+    padding: 10px 20px;
+    border-style: double;
+    border-width: 5px;
+    border-color: grey;
+}
+.login-form{
+    text-align: right;
+    margin-right: 10px;
+}
+footer{
+    background-color: #3b5998;
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: #e3ebf7;
+}
