@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Welcome to Log-in page</h1>
+    <form onsubmit="return processLogin()">
+        <input type="text" placeholder="Username" id="username">
+        <input type="password" placeholder="Password" id="password">
+        <button type="submit">Login</button>
+    </form>
+
+
+    <script>
+        function processLogin() {
+            //Get username and password values
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            //Simple username and password check
+            if (username === 'admin' && password === 'admin') {
+                //Redirect to main.html if credentials are correct
+                window.location.href = './JS/Marks.html';
+            } else {
+                //Alert user if credentials are incorrect
+                alert('Invalid username or password');
+            }
+            //Prevent form submission
+            return false;
+        }
+    </script>
+</body>
+
+</html>
