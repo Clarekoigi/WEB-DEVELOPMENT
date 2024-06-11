@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/STYLE 2.css">
+    <script defer src="./JS/MAIN2.JS"></script>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>Student Report Card</h1>
+            <form id="marksForm">
+             <label for="name">Student Name</label>
+             <input required id="name" type="text">
+             <label for="rollNum">Roll Number</label>
+             <input required id="rollNum" type="text">
+             <label for="class">Class</label>
+             <input required id="class" type="text">
+             <label for="school">School</label>
+             <input required id="school" type="text">
+             <label for="mathMarks">Math Marks</label>
+             <input required id="mathMarks" type="number">
+             <label for="scienceMarks">Science Marks</label>
+             <input required id="scienceMarks" type="number">
+             <label for="englishMarks">English Marks</label>
+             <input required id="englishMarks" type="number">
+             <label for="historyMarks">History Marks</label>
+             <input required id="historyMarks" type="number">
+             <label for="PEMarks">Physical Education Marks</label>
+             <input required id="PEMarks" type="number">
+             <button id="generateMarks" type="submit">Generate Report Card</button>
+            </form>
+         
+            <div id="reportCard" style="display:none;">
+             <!-- <h2>Student Report Card</h2> -->
+             <p><strong>Student Name:</strong> <span id="displayName"></span></p>
+             <p><strong>Roll Number:</strong> <span id="displayRollNum"></span></p>
+             <p><strong>Class:</strong> <span id="displayClass"></span></p>
+             <p><strong>School:</strong> <span id="displaySchool"></span></p>
+             <table>
+              <tr>
+               <th>Subject</th>
+               <th>Marks</th>
+              </tr>
+              <tr>
+               <td>Math</td>
+               <td id="displayMathMarks"></td>
+              </tr>
+              <tr>
+               <td>Science</td>
+               <td id="displayScienceMarks"></td>
+              </tr>
+              <tr>
+               <td>English</td>
+               <td id="displayEnglishMarks"></td>
+              </tr>
+              <tr>
+               <td>History</td>
+               <td id="displayHistoryMarks"></td>
+              </tr>
+              <tr>
+               <td>Physical Education</td>
+               <td id="displayPEMarks"></td>
+              </tr>
+             </table>
+             <p><strong>Average Grade:</strong> <span id="averageGrade"></span></p>
+             <p><strong>Recommendation:</strong> <span id="recommendation"></span></p>
+            </div>
+           </div>
+    </main>
+    
+</body>
+</html>
